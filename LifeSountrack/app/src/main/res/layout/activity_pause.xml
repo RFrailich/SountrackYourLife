@@ -13,17 +13,17 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/pause"
-
         android:layout_marginTop="116dp"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:onClick="pause" />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/skip"
-
         android:layout_alignTop="@+id/button"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false" />
+        android:layout_alignParentEnd="false"
+        android:onClick="skip" />
 
 </RelativeLayout>
