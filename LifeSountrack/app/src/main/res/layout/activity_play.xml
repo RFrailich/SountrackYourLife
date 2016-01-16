@@ -3,30 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_main"
     tools:context="com.example.giraffe.lifesountrack.PlayActivity">
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/play"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="116dp"
-        android:id="@+id/playPlay"
-        android:onClick="play" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#50333333"
+        android:layout_weight="0.19"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/play"
+        android:id="@+id/button"
+        android:onClick="play"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/skip"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/playPlay"
-        android:layout_alignStart="@+id/playPlay"
-        android:onClick="skip" />
+        android:onClick="skip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rewind"
+        android:onClick="back"
+        android:layout_alignTop="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
 
 </RelativeLayout>

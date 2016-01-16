@@ -16,7 +16,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".PlayActivity" />
-        <activity android:name=".PauseActivity"></activity>
+        <activity android:name=".PauseActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".NewPlaylistActivity"
+            android:label="@string/title_activity_new_playlist"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
