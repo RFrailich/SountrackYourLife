@@ -14,19 +14,20 @@
         android:layout_height="150dp"
         android:background="@drawable/play"
         android:gravity="center_vertical|center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="117dp"
         android:id="@+id/playPlay"
-        android:onClick="play" />
+        android:onClick="play"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/skip"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/playPlay"
-        android:layout_alignStart="@+id/playPlay"
-        android:onClick="skip" />
+        android:onClick="skip"
+        android:layout_alignTop="@+id/playPlay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
