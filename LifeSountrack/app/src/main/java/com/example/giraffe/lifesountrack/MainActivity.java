@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //n = 0;
         //Code to choose a song with a given BPM, right now choose a specific song
-        mediaPlayer = MediaPlayer.create(this, R.raw.slow); //change to logical  choice later
+        mediaPlayer = MediaPlayer.create(this, R.raw.slowsong); //change to logical  choice later
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button mPlayButton = (Button) findViewById(R.id.playMain);
@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         // Default button, if need set it in xml via background="@drawable/default"
         mPlayButton.setBackgroundResource(R.drawable.play);
         mPlayButton.setOnClickListener(mTogglePlayButton);
-        myMenu.setOnClickListener(mToggleMenuButton);
     }
 
     View.OnClickListener mTogglePlayButton = new View.OnClickListener(){
@@ -45,30 +44,16 @@ public class MainActivity extends AppCompatActivity {
 
     };
 
-    View.OnClickListener mToggleMenuButton = new View.OnClickListener(){
-        @Override
-        public void onClick(View v){
-            setContentView(R.layout.activity_menu);
-            Button lilB = (Button) findViewById(R.id.lowB);
-            Button midB = (Button) findViewById(R.id.midB);
-            Button bigB = (Button) findViewById(R.id.highB);
-            //setContentView(R.layout.activity_menu);
-        }
-    };
-
-    public void mToggleLoSong() {
+    public void mToggleLoSong(View view) {
         wat = 0;
-        setContentView(R.layout.activity_main);
+        mediaPlayer.pause();
+        mediaPlayer = MediaPlayer.create(this, R.raw.slowsong); //change to logical  choice later
     }
 
-    public void mToggleMidSong() {
-        wat = 1;
-        setContentView(R.layout.activity_main);
-    }
-
-    public void mToggleHiSong() {
+    public void mToggleHiSong(View view) {
         wat = 2;
-        setContentView(R.layout.activity_main);
+        mediaPlayer.pause();
+        mediaPlayer = MediaPlayer.create(this, R.raw.fastsong); //change to logical  choice later
     }
 
     public void list(View view){

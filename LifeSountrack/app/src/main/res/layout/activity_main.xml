@@ -59,5 +59,34 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="114 BPM"
+        android:id="@+id/highB"
+        android:onClick="mToggleHiSong"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/gear"
+        android:layout_toLeftOf="@+id/playMain"
+        android:background="#50333333"
+        android:layout_toStartOf="@+id/playMain" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lowB"
+        android:onClick="mToggleLoSong"
+        android:layout_above="@+id/imageView"
+        android:layout_toRightOf="@+id/playMain"
+        android:layout_toEndOf="@+id/playMain"
+        android:background="#50333333"
+        android:text="74  BPM " /><![CDATA[
+
+    />
+]]>
 </RelativeLayout>
