@@ -26,7 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
       public void onCreate(SQLiteDatabase db){
 
           db.execSQL("CREATE TABLE "+songTable+" ("+colID+" INTEGER PRIMARY KEY AUTOINCREMENT," +
-                  ""+colBPM+" INTEGER "colPath" STRING "colList" LIST);");
+                  ""+colBPM+" INTEGER "+colPath+" STRING "+colList+" LIST);");
 
       }
 
@@ -40,4 +40,3 @@ public class DBHelper extends SQLiteOpenHelper {
 
   }
 
-}
