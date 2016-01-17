@@ -35,11 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     };
 
-    public void settings(View view){
-        Intent nextPage = new Intent(this, SettingsActivity.class);
-        startActivity(nextPage);
-    }
-
     public void list(View view){
         Intent nextPage = new Intent(this, NewPlaylistActivity.class);
         startActivity(nextPage);
