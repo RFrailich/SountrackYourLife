@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="78 BPM"
+        android:id="@+id/lowB"
+        android:onClick="mToggleLoSong"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.20" />
+
+    <Button
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="97 BPM"
+        android:id="@+id/midB"
+        android:onClick="mToggleMidSong"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.20" />
+
+    <Button
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="114 BPM"
+        android:id="@+id/highB"
+        android:onClick="mToggleHiSong"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.20" />
+
+</LinearLayout>
